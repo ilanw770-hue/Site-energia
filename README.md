@@ -1,57 +1,46 @@
 # Energia Group — Site internet
 
-Site vitrine moderne et responsive pour **Energia Group**, entreprise spécialisée
-dans les solutions d'énergie renouvelable (solaire, éolien, stockage, efficacité
-énergétique).
+Site vitrine d'**Energia Group** (SAS, SIREN 909 268 286), installateur RGE QualiPAC
+de pompes à chaleur. Contenu et charte : *Energia Group Cahier des charges.docx*.
 
-## ⚡ Aperçu
+Priorité actuelle : le parcours **Particuliers (B2C) pompe à chaleur**, avec le
+test d'éligibilité en 5 étapes qui génère les demandes de rappel.
 
-Site statique en HTML / CSS / JavaScript (sans dépendance ni build), prêt à être
-déployé sur n'importe quel hébergement statique (GitHub Pages, Netlify, Vercel,
-serveur Apache/Nginx…).
+## Pages
 
-## 📁 Structure
+| URL | Contenu |
+| --- | --- |
+| `/` | Accueil (12 sections du cahier des charges) |
+| `/particuliers/` | Solutions particuliers (+ poêle, VMC, isolation) |
+| `/particuliers/pompe-a-chaleur-air-eau/` | PAC air/eau |
+| `/particuliers/pompe-a-chaleur-air-air/` | PAC air/air |
+| `/particuliers/ballon-thermodynamique/` | Ballon thermodynamique |
+| `/particuliers/aides-renovation/` | MaPrimeRénov', CEE, TVA réduite |
+| `/eligibilite/` | Test d'éligibilité (formulaire en étapes) |
+| `/professionnels/` | Espace Pro : Décret BACS, CPE, Loi Climat |
+| `/a-propos/`, `/contact/` (+ SAV), `/mentions-legales/` | |
 
-```
-.
-├── index.html        # Page principale (toutes les sections)
-├── css/
-│   └── styles.css    # Styles, design system et responsive
-├── js/
-│   └── main.js       # Menu mobile, animations, compteurs, formulaire
-└── README.md
-```
+## Avant la mise en ligne — `js/config.js`
 
-## 🧩 Sections
+- `formEndpoint` : adresse qui reçoit les demandes (POST JSON), par ex. un
+  formulaire Formspree. **Sans elle ni `email`, les formulaires affichent une
+  erreur et aucune demande n'est reçue.**
+- `email`, `phone` : coordonnées affichées (page Contact, mentions légales).
+- `socials` : liens réseaux sociaux du pied de page.
 
-- **Hero** — accroche et appels à l'action
-- **Services** — 6 expertises (solaire, éolien, stockage, efficacité, audit, maintenance)
-- **À propos** — présentation de l'entreprise
-- **Réalisations** — chiffres clés animés
-- **Méthode** — déroulé du projet en 4 étapes
-- **Témoignages** — avis clients
-- **Contact** — coordonnées et formulaire avec validation
+À compléter aussi : directeur de la publication et hébergeur dans
+`/mentions-legales/` (marqués `[à compléter]`), photos de chantiers et logos
+fabricants (cahier des charges, section 7).
 
-## 🚀 Lancer en local
+## Modifier le site
 
-Aucune installation requise. Ouvrez `index.html` dans un navigateur, ou servez
-le dossier :
+Le site est 100 % statique (HTML/CSS/JS, sans dépendance). L'en-tête, le pied de
+page et les textes sont dans `tools/build.py` :
 
 ```bash
-python3 -m http.server 8000
-# puis ouvrez http://localhost:8000
+python3 tools/build.py          # régénère les pages HTML
+python3 -m http.server 8000     # aperçu sur http://localhost:8000
 ```
 
-## 🔧 Personnalisation
-
-- **Couleurs & design** : variables CSS dans `:root` (fichier `css/styles.css`).
-- **Contenu** : éditez directement `index.html`.
-- **Formulaire** : l'envoi est simulé dans `js/main.js`. Connectez-le à un
-  service d'emailing (Formspree, EmailJS, backend…) pour la mise en production.
-
-## ✅ Caractéristiques
-
-- 100 % responsive (mobile, tablette, desktop)
-- Accessible (HTML sémantique, ARIA, navigation clavier)
-- Respecte `prefers-reduced-motion`
-- Léger et rapide, sans framework
+Commitez ensuite les fichiers HTML générés. Les chemins sont relatifs : le site
+fonctionne à la racine d'un domaine comme dans un sous-dossier (GitHub Pages).

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Testez votre éligibilité aux aides pompe à chaleur | Energia Group</title>
+  <meta name="description" content="Test gratuit en 2 minutes : vérifiez votre éligibilité aux aides de l'État pour votre pompe à chaleur. Réponse sous 48 h.">
+  <meta name="theme-color" content="#1E2B2A">
+  <meta property="og:title" content="Testez votre éligibilité aux aides pompe à chaleur | Energia Group">
+  <meta property="og:description" content="Test gratuit en 2 minutes : vérifiez votre éligibilité aux aides de l'État pour votre pompe à chaleur. Réponse sous 48 h.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <a class="skip" href="#main">Aller au contenu</a>
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="../" class="logo" aria-label="Energia Group — Accueil">
+        <span class="logo-mark"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></span>
+        <span class="logo-text">ENERGIA<strong>GROUP</strong></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <div class="nav-item has-sub"><a href="../particuliers/">Particuliers</a><div class="sub"><a href="../particuliers/pompe-a-chaleur-air-eau/">Pompe à chaleur air/eau</a><a href="../particuliers/pompe-a-chaleur-air-air/">Pompe à chaleur air/air</a><a href="../particuliers/ballon-thermodynamique/">Ballon thermodynamique</a><a href="../particuliers/#autres-solutions">Poêle à granulés, VMC, isolation</a><a href="../particuliers/aides-renovation/">Aides à la rénovation</a></div></div><div class="nav-item has-sub"><a href="../professionnels/">Professionnels</a><div class="sub"><a href="../professionnels/#decret-bacs">Décret BACS</a><a href="../professionnels/#cpe">Contrat de Performance Énergétique</a><a href="../professionnels/#loi-climat">Loi Climat et Résilience</a></div></div><div class="nav-item"><a href="../a-propos/">À propos</a></div><div class="nav-item"><a href="../contact/#sav">SAV</a></div><div class="nav-item"><a href="../contact/">Contact</a></div>
+        <div class="nav-ctas">
+          <a href="../eligibilite/" class="btn btn-green btn-sm">Testez votre éligibilité</a>
+          <a href="../professionnels/" class="btn btn-outline btn-sm">Espace Pro</a>
+        </div>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero dark topo compact">
+      <div class="container">
+        <p class="eyebrow">Test d'éligibilité</p>
+        <h1>Testez votre éligibilité en 2 minutes</h1>
+        <p class="lead">Gratuit et sans engagement. Un conseiller étudie votre dossier sous 48 h.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container narrow">
+        <form class="wizard" id="wizard" data-lead-form data-source="Test d'éligibilité" novalidate>
+          <div class="wizard-progress" aria-hidden="true"><span id="wizardBar"></span></div>
+          <p class="wizard-count" id="wizardCount"></p>
+
+          <fieldset class="wstep" data-step>
+            <legend>Quel est votre projet&nbsp;?</legend>
+            <div class="choices">
+              <label><input type="radio" name="projet" value="Pompe à chaleur air/eau" required><span>Pompe à chaleur air/eau</span></label>
+              <label><input type="radio" name="projet" value="Pompe à chaleur air/air"><span>Pompe à chaleur air/air</span></label>
+              <label><input type="radio" name="projet" value="Ballon thermodynamique"><span>Ballon thermodynamique</span></label>
+              <label><input type="radio" name="projet" value="Je ne sais pas"><span>Je ne sais pas, conseillez-moi</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="wstep" data-step>
+            <legend>Comment chauffez-vous votre logement aujourd'hui&nbsp;?</legend>
+            <div class="choices">
+              <label><input type="radio" name="chauffage" value="fioul" required><span>Chaudière fioul</span></label>
+              <label><input type="radio" name="chauffage" value="gaz"><span>Chaudière gaz</span></label>
+              <label><input type="radio" name="chauffage" value="electrique"><span>Radiateurs électriques</span></label>
+              <label><input type="radio" name="chauffage" value="bois"><span>Bois / charbon</span></label>
+              <label><input type="radio" name="chauffage" value="autre"><span>Autre</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="wstep" data-step>
+            <legend>Votre logement</legend>
+            <div class="choices two">
+              <label><input type="radio" name="logement" value="Maison" required><span>Maison</span></label>
+              <label><input type="radio" name="logement" value="Appartement"><span>Appartement</span></label>
+            </div>
+            <div class="choices two">
+              <label><input type="radio" name="statut" value="Propriétaire occupant" required><span>Propriétaire occupant</span></label>
+              <label><input type="radio" name="statut" value="Propriétaire bailleur"><span>Propriétaire bailleur</span></label>
+              <label><input type="radio" name="statut" value="Locataire"><span>Locataire</span></label>
+            </div>
+            <div class="choices two">
+              <label><input type="radio" name="anciennete" value="Plus de 15 ans" required><span>Construit il y a plus de 15 ans</span></label>
+              <label><input type="radio" name="anciennete" value="Entre 2 et 15 ans"><span>Entre 2 et 15 ans</span></label>
+              <label><input type="radio" name="anciennete" value="Moins de 2 ans"><span>Moins de 2 ans</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="wstep" data-step>
+            <legend>Votre foyer</legend>
+            <p class="hint">Ces informations servent uniquement à estimer le niveau de vos aides.</p>
+            <label class="field">Code postal du logement<input name="code_postal" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" required></label>
+            <label class="field">Nombre de personnes dans le foyer
+              <select name="personnes" required><option value="">Choisir</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6 ou plus</option></select></label>
+            <label class="field">Revenu fiscal de référence du foyer
+              <select name="revenus" required><option value="">Choisir</option>
+                <option>Moins de 25 000 €</option><option>De 25 000 à 35 000 €</option><option>De 35 000 à 50 000 €</option>
+                <option>De 50 000 à 75 000 €</option><option>Plus de 75 000 €</option><option>Je ne sais pas</option></select></label>
+          </fieldset>
+
+          <fieldset class="wstep" data-step>
+            <legend>Vos coordonnées</legend>
+            <label class="field">Nom et prénom<input name="nom" autocomplete="name" required></label>
+            <label class="field">Téléphone<input name="telephone" type="tel" autocomplete="tel" required></label>
+            <label class="field">Email<input name="email" type="email" autocomplete="email" required></label>
+            <label class="consent"><input type="checkbox" name="consentement" required>
+              J'accepte d'être recontacté par Energia Group au sujet de ma demande. Mes données ne sont ni cédées ni revendues.
+              <a href="../mentions-legales/#confidentialite">En savoir plus</a></label>
+          </fieldset>
+
+          <div class="wstep wdone" data-done hidden>
+            <h2>Merci, votre demande est bien enregistrée&nbsp;!</h2>
+            <p>Un conseiller Energia Group étudie votre dossier et vous rappelle sous 48 h pour vous présenter les aides auxquelles vous avez droit.</p>
+            <p class="small">Rappel : nos conseillers ne pratiquent pas de démarchage abusif.</p>
+          </div>
+
+          <div class="wizard-nav">
+            <button type="button" class="btn btn-outline" id="wPrev">Retour</button>
+            <button type="button" class="btn btn-green" id="wNext">Continuer ›</button>
+            <button type="submit" class="btn btn-green" id="wSubmit">Recevoir mon étude gratuite ›</button>
+          </div>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <section class="vigilance dark">
+    <div class="container vigilance-inner">
+      <div class="vigilance-icon" aria-hidden="true">!</div>
+      <div>
+        <h2 class="h4">Vigilance — démarchage abusif</h2>
+        <p>Des appels ou messages frauduleux peuvent être passés en usurpant le nom d'Energia Group.
+        Nos conseillers ne pratiquent pas de démarchage abusif. En cas de doute, ne communiquez aucune
+        information personnelle et <a href="../contact/">contactez-nous directement</a>.</p>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer dark topo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="../" class="logo logo-light"><span class="logo-mark"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></span>
+          <span class="logo-text">ENERGIA<strong>GROUP</strong></span></a>
+        <p>Installateur RGE QualiPAC de pompes à chaleur et de solutions de rénovation énergétique,
+        pour les particuliers et les professionnels, partout en France.</p>
+        <p class="small">Qualification RGE QualiPAC module chauffage et ECS — n° QPAC/69638</p>
+        <div class="socials" data-socials></div>
+      </div>
+      <nav class="footer-col" aria-label="Particuliers">
+        <h3 class="h5">Particuliers</h3>
+        <a href="../particuliers/pompe-a-chaleur-air-eau/">Pompe à chaleur air/eau</a>
+        <a href="../particuliers/pompe-a-chaleur-air-air/">Pompe à chaleur air/air</a>
+        <a href="../particuliers/ballon-thermodynamique/">Ballon thermodynamique</a>
+        <a href="../particuliers/aides-renovation/">Aides à la rénovation</a>
+        <a href="../eligibilite/">Testez votre éligibilité</a>
+      </nav>
+      <nav class="footer-col" aria-label="Professionnels">
+        <h3 class="h5">Professionnels</h3>
+        <a href="../professionnels/#decret-bacs">Décret BACS</a>
+        <a href="../professionnels/#cpe">Contrat de Performance Énergétique</a>
+        <a href="../professionnels/#loi-climat">Loi Climat et Résilience</a>
+      </nav>
+      <nav class="footer-col" aria-label="Energia Group">
+        <h3 class="h5">Energia Group</h3>
+        <a href="../a-propos/">À propos</a>
+        <a href="../contact/#sav">SAV</a>
+        <a href="../contact/">Contact</a>
+        <a href="../mentions-legales/">Mentions légales</a>
+        <a href="../mentions-legales/#confidentialite">Politique de confidentialité</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> ENERGIA GROUP (SAS) · SIREN 909 268 286</p>
+      <p>*Sous conditions d'éligibilité.</p>
+    </div>
+  </footer>
+  <script src="../js/config.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
